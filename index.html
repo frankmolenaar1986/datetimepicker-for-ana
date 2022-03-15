@@ -5,7 +5,17 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<title>TEST TEST TEST</title>
+		<!-- flatpickr library library -->
+		<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+		<!-- flatpicker theme -->
+		<link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/material_green.css">
 		
+		<style>
+			html {
+				font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+			}
+		</style>
 	</head>
 	
 	<body>
@@ -18,9 +28,20 @@
 			This is a sample form to test datepicker plugins
 		</p>
 
+		<h3>Standard HTML5</h3>
 		<form method="POST">
 			<input type="datetime-local" />
 		</form>
+
+		<h3>Flatpickr.js</h3>
+		
+		<div>
+			<label for="myDateTimePicker">Pick a date/time</label>
+			<input id="myDateTimePicker" placeholder="Pick a date and time">
+		</div>
+
+		<!-- custom js file to configure datepicker -->
+		<script src="js/flatpicker-config.js"></script>
 
 	</body>
 
